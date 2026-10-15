@@ -1,0 +1,237 @@
+body {
+  background-color:#F5C37A; /* Puedes cambiar este código de color por el que prefieras */
+  margin: 0;                  /* Elimina los bordes/márgenes por defecto de la página */
+}
+h1 {
+  color: #ffffff;                       /* Letra del título en blanco */
+  font-family: 'Arial', sans-serif;     /* Tipografía */
+  font-size: 2.5rem;                    /* Tamaño del texto */
+  font-weight: 700;                     /* Negrita */
+  background-color: #e86326;            /* Fondo naranja grueso */
+  width: 100%;                          /* Ocupa todo el ancho */
+  text-align: center;                   /* Centra la letra del título */
+  margin: 0;                            /* Elimina márgenes por defecto */
+  padding: 30px 40px;                   /* Grosor/espacio interno arriba y abajo */
+  box-sizing: border-box;               /* Mantiene el ancho ajustado */
+}
+img {
+  max-width: 100%;    /* Hace que la imagen sea responsiva y nunca rebase el ancho de su contenedor */
+  height: auto;       /* Mantiene la proporción original para que no se deforme */
+}
+
+.contenedor-seccion {
+text-align: left; /* O quita el flexbox centrado para que fluyan normal */
+margin: 20px 0;
+}
+
+/* Estilo para los h2 ajustados al texto */
+h2 {
+color: #FAF2E8;                       /* Letra blanca */
+font-family: 'Arial', sans-serif;
+font-size: 2rem;
+font-weight: 700;
+background-color: #D97155;            /* Fondo naranja */
+display: inline-block;                /* CLAVE: Hace que la barra mida exactamente lo que mide el texto */
+padding: 8px 16px;                    /* Grosor arriba/abajo y espacio a los lados */
+margin: 15px 0 10px 0;                /* Separación con el contenido de arriba y abajo */
+}
+
+
+.infografia-caja-general {
+  background-color: #ffe66d;     /* Color de fondo para todo el bloque (puedes cambiarlo) */
+  border: 2px solid #000000;     /* Contorno negro sólido */
+  border-radius: 12px;           /* Esquinas redondeadas */
+  padding: 25px 30px;            /* Espacio interno para que los li no peguen a los bordes */
+  margin: 20px auto;
+  max-width: 450px;
+  list-style-type: none;         /* Opcional: quita los puntos de la lista si prefieres un look más limpio */
+  box-shadow: 4px 4px 0px #000000; /* Sombra sólida estilo infografía */
+}
+
+/* Espaciado opcional entre cada elemento (li) dentro de la caja */
+.infografia-caja-general li {
+  margin-bottom: 15px;
+}
+
+.infografia-caja-general li:last-child {
+  margin-bottom: 0; /* Elimina el margen del último elemento */
+}
+
+.mapa {
+  background-color: #F7774D;      /* El color "azul" que actúa como grosor/fondo */
+  color: #FFF9F5;                 /* El color verde del texto */
+  padding: 2px 4px;               /* Un pequeño respiro arriba/abajo y a los lados */
+  display: inline;                /* Hace que solo ocupe el ancho exacto del texto */
+  /* Si quieres que actúe más como un bloque sólido compacto, puedes usar: */
+  box-decoration-break: clone;    /* Evita problemas si el texto pasa a dos renglones */
+  -webkit-box-decoration-break: clone;
+}
+.caligrafia {
+  font-family: 'Great Vibes', cursive; /* Aplica la fuente caligráfica */
+  font-size: 5rem;                   /* Tamaño grande para que luzcan los detalles */
+  color: #ffffff;                      /* Color del texto (puedes cambiarlo a tu gusto) */
+}
+h2 {
+  font-family: 'Italianno', cursive; /* Aplica la fuente de la imagen */
+  font-size: 3.5rem;                 /* Tamaño sugerido (puedes aumentarlo o reducirlo) */
+  font-weight: 400;                  /* Peso normal para mantener los trazos limpios */
+  color: #ffffff;                    /* Cambia el color según tu diseño */
+}
+.video {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  width: 100%;             /* Ocupa todo el ancho disponible para poder centrarse */
+  margin: 20px 0;          /* Espaciado arriba y abajo */
+}
+
+/* Estilos para el marco y ajuste de ancho del iframe */
+.video iframe {
+  width: 80%;              /* Ajusta el ancho del iframe (puedes cambiarlo a 100% o píxeles fijos) */
+  max-width: 800px;        /* Evita que crezca demasiado en pantallas grandes */
+  border: 3px solid #000000; /* Marco sólido de color negro (puedes cambiar el color y grosor) */
+  border-radius: 10px;     /* Esquinas redondeadas para el marco */
+  box-shadow: 4px 4px 0px #68463C; /* Sombra opcional para darle estilo */
+}
+.marcomapa {
+  display: flex;
+  justify-content: center; /* Centra el mapa */
+  width: 100%;
+  margin: 20px 0;          /* Separa el mapa de los elementos de arriba y abajo */
+}
+
+/* Estilos para el marco y el diseño del mapa */
+.marcomapa iframe {
+  border: 3px solid #000;      /* Marco negro sólido (puedes cambiar el color) */
+  border-radius: 12px;         /* Esquinas redondeadas */
+  max-width: 100%;             /* Adaptable a pantallas móviles */
+  box-shadow: 4px 4px 0px #68463C; /* Sombra opcional combinada con tu diseño */
+}
+.mapa {
+  /* Forzamos a quitar cualquier fondo o sombra heredada */
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  /* Color del texto (puedes cambiarlo si prefieres blanco #fff u otro color) */
+  color: #1F0703 !important;
+
+  /* Fuente tipo italiano (Italianno) y tamaño elegante */
+  font-family: 'Courgette', cursive !important;
+  font-size: 1rem;                 /* Tamaño grande pero controlado para párrafos largos */
+  font-weight: 400;
+
+  /* Control de ancho para que no se expanda por toda la pantalla (se adapte al mapa) */
+  max-width: 600px;                  /* Ancho máximo similar al del mapa */
+  width: 100%;
+
+  /* Centrado perfecto */
+  display: block;
+  margin: 20px auto;                 /* Centrado horizontal automático */
+  text-align: center;                /* Texto centrado dentro de su bloque */
+  line-height: 1.1;                  /* Espaciado entre líneas para que la letra caligráfica luzca bien */
+}
+.pizza {
+  /* Forzamos a quitar cualquier fondo o sombra heredada */
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  /* Color del texto (puedes cambiarlo si prefieres blanco #fff u otro color) */
+  color: #1F0703 !important;
+
+  /* Fuente tipo italiano (Italianno) y tamaño elegante */
+  font-family: 'Courgette', cursive !important;
+  font-size: 1rem;                 /* Tamaño grande pero controlado para párrafos largos */
+  font-weight: 400;
+
+  /* Control de ancho para que no se expanda por toda la pantalla (se adapte al mapa) */
+  max-width: 700px;                  /* Ancho máximo similar al del mapa */
+  width: 100%;
+
+  /* Centrado perfecto */
+  display: block;
+  margin: 20px auto;                 /* Centrado horizontal automático */
+  text-align: center;                /* Texto centrado dentro de su bloque */
+  line-height: 1.1;                  /* Espaciado entre líneas para que la letra caligráfica luzca bien */
+}
+.ingredientes img {
+  max-width: 70%;    /* Hace que la imagen sea responsiva y nunca rebase el ancho de su contenedor */
+  height: auto;       /* Mantiene la proporción original para que no se deforme */
+}
+
+
+/* Aplica la fuente Courgette a los elementos de la lista (li) */
+ul li {
+  font-family: 'Courgette', cursive !important;
+  color: #1F0703 !important;
+  font-size: 1rem !important; /* Tamaño grande y legible */
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* Opcional: Si quieres que las listas queden centradas estéticamente como el resto de la página */
+ul {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  text-align: left; /* Deja el texto alineado a la izquierda para que sea fácil de leer, pero el bloque entero queda centrado */
+}
+/* Aplica la fuente Courgette a los pasos de la lista numerada (ol li) */
+ol li {
+  font-family: 'Courgette', cursive !important;
+  color: #1F0703 !important;
+  font-size: 1rem !important; /* Tamaño grande y legible */
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+/* Opcional: Centra el bloque de la lista numerada manteniendo los números alineados */
+ol {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  text-align: left; /* Mantiene el texto alineado a la izquierda para una lectura cómoda de los pasos */
+}
+.cuatro {
+  /* Limpiamos cualquier fondo viejo */
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  /* Fuente Courgette y color blanco solo para este párrafo */
+  font-family: 'Courgette', cursive !important;
+  color: #1F0703 !important;
+  font-size: 1rem !important;
+
+  max-width: 450px !important;
+    width: 100% !important;
+
+    display: block !important;
+    margin: 20px auto !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+
+    /* Mueve el párrafo hacia la izquierda (puedes ajustar los píxeles si necesitas más o menos distancia) */
+    transform: translateX(-200px);
+}
+.alinear {
+  max-width: 450px !important;
+  width: 100% !important;
+  display: block !important;
+  margin: 30px auto !important;
+  text-align: center !important;
+
+  /* Modifica este valor según qué tan a la izquierda los quieras llevar */
+  transform: translateX(-240px);
+}
+
+/* Aplica la fuente Courgette, color blanco y tamaño al texto y enlaces de ese bloque */
+.alinear a {
+  font-family: 'Courgette', cursive !important;
+
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  text-decoration: underline;
+}
+.alinear a {
+  display: inline-block;
+  margin-bottom: 8px !important;
+}
