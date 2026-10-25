@@ -72,7 +72,7 @@ margin: 15px 0 10px 0;                /* Separación con el contenido de arriba 
   color: #ffffff;                      /* Color del texto (puedes cambiarlo a tu gusto) */
 }
 h2 {
-  font-family: 'Italianno', cursive; /* Aplica la fuente de la imagen */
+  font-family: 'Arial', cursive; /* Aplica la fuente de la imagen */
   font-size: 3.5rem;                 /* Tamaño sugerido (puedes aumentarlo o reducirlo) */
   font-weight: 400;                  /* Peso normal para mantener los trazos limpios */
   color: #ffffff;                    /* Cambia el color según tu diseño */
@@ -161,7 +161,7 @@ h2 {
 
 
 /* Aplica la fuente Courgette a los elementos de la lista (li) */
-ul li {
+h2 {
   font-family: 'Courgette', cursive !important;
   color: #1F0703 !important;
   font-size: 1rem !important; /* Tamaño grande y legible */
@@ -170,14 +170,14 @@ ul li {
 }
 
 /* Opcional: Si quieres que las listas queden centradas estéticamente como el resto de la página */
-ul {
+h2 {
   max-width: 500px;
   margin: 0 auto 20px auto;
   text-align: left; /* Deja el texto alineado a la izquierda para que sea fácil de leer, pero el bloque entero queda centrado */
 }
 /* Aplica la fuente Courgette a los pasos de la lista numerada (ol li) */
 ol li {
-  font-family: 'Courgette', cursive !important;
+  font-family: 'Times', cursive !important;
   color: #1F0703 !important;
   font-size: 1rem !important; /* Tamaño grande y legible */
   line-height: 1.2;
@@ -185,7 +185,7 @@ ol li {
 }
 
 /* Opcional: Centra el bloque de la lista numerada manteniendo los números alineados */
-ol {
+h2 {
   max-width: 600px;
   margin: 0 auto 30px auto;
   text-align: left; /* Mantiene el texto alineado a la izquierda para una lectura cómoda de los pasos */
@@ -235,3 +235,4 @@ ol {
   display: inline-block;
   margin-bottom: 8px !important;
 }
+h1:hover {
